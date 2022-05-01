@@ -8,17 +8,17 @@ app = Flask(__name__)
 def hello():
     return "Hello World from Flask!!!"
 
-@app.route('/second')
+@app.route('/location')
 def second():
     return 'Bize Her Yer Sivas!!!!'
 
 @app.route('/third/subthird')
 def third():
-    return 'This is the subpage of third page'
+    return 'This is the subpage of third page. Go to Sivas \'58\''
 
 @app.route('/forth/<string:id>')
 def forth(id):
-    return f'Id number of this page is {id}'
+    return f'Id number of this page is {id} yani 58 gardasssss. ---> Go to Sivas --->'
 
 
 if __name__ == '__main__':
