@@ -20,8 +20,7 @@ def calc():
     multiply = (var1 * var2 * var3)
     def number():
         return (" {0} * {1} * {2} = {3}".format(var1, var2, var3, multiply))
-    aaa = number()
-    return render_template('body2.html', num1 = var1, num2 = var2, num3 = var3, multiplication = multiply, resume = aaa)
+    return render_template('body2.html', num1 = var1, num2 = var2, num3 = var3, multiplication = multiply, resume = number())
 
 if __name__ == '__main__':
     app.run(debug=True, port=2000) # if ===> port is not dedicated. It is 5000 as default 
